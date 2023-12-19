@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.background{
+    height: 100vh;
+    width: 100vw;
+    background: url(./images/space\ 3.png) no-repeat center center fixed;
+    /* -webkit-background-size: cover;
+    -moz-background-size:cover;
+    -o-background-size:cover; */
+    background-size: cover;
+
+}
+
+#super-man{
+    height: 100px;
+    width: 130px;
+    position: fixed;
+    top: 40vh;
+    left: 30vh;
+    z-index: 100;
+}
+ 
+.kryptonite-blocks{
+    position: fixed;
+    top: 40vh;
+    left: 100vw;
+    height: 70vh;
+    width: 6vw;
+    background: lightgreen;
+    border: 5px solid black;
+
+
+}
+
+.startMessage{
+    font-size: 50px;
+    position: absolute;
+    z-index: 10;
+    color: white;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: blueviolet;
+}
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.startStyle{
+    background: lightgreen;
+    padding: 30px;
+    box-shadow: black;
+    border-radius: 5%;
+
+}
+
+.score{
+    position: fixed;
+    z-index: 10;
+    height: 10vh;
+    font-size: 10vh;
+    font-weight: 100;
+    color: lightgreen;
+    /* -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black; */
+    top: 0;
+    left: 0;
+    margin: 10px;
+}
+
+.score-value{
+    color: lawngreen;
+    font-weight: bold;
+}
+@media only screen and (max-width : 1080px){
+    .start{
+        font-size: 50px;
+        top: 50%;
+        white-space: nowrap;
+
+    }
+    .score{
+        font-size: 8vh;
+
+    }
+    #super-man{
+        width: 120px;
+        height: 90px;
+
+    }
+    .kryptonite-blocks{
+        width: 14vh;
+
+    }
+
+}
