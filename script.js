@@ -1,32 +1,36 @@
-let speedSuperman = 3
-let  gravity = 0.5
-let superman = document.querySelector(`#super-man`)
+let move_speed = 3
+let grativy = 0.5
+let superman = document.querySelector('.superman')
+let img = document.getElementById('superman-1')
 
-let superman_props = superman.getBoundingClientRect()
-
-let startMessage = document.querySelector(`.start`)
-let background = document.querySelector(`.background`)
-let scoreTitle = document.querySelector(`.score-title`)
-let scoreValue = document.querySelector(`.score-value`)
+let supemanInPlace = superman.getBoundingClientRect()
 
 
-let gamesState = `Start`
-startMessage.classList.add(`startStyle`)
+let background = document.querySelector('.background').getBoundingClientRect()
 
+let scoreValue = document.querySelector('.score_val')
+let startMessage = document.querySelector('.startMessage')
+let scoreTitle = document.querySelector('.score_title')
 
-document.addEventListener(`keydown`,(e)=>{
-    if (e.key== `Enter` && gamesState != `Game`){
-        document.querySelectorAll(`.kryptonite-blocks`).forEach((e)=>{
+let gameScreen = 'Start'
+img.style.display = 'none'
+startMessage.classList.add('messageStyle');
+
+document.addEventListener('keydown', (e) => {
+    
+    if(e.key == 'Enter' && gameScreen != 'Game'){
+        document.querySelectorAll('.kryptoBlocks').forEach((e) => {
             e.remove()
         })
-        superman.style.top = `40vh`
-        gamesState = `Play`
-        startMessage.innerHTML=``
-        scoreTitle.innerHTML=`Score : `
-        scoreValue.innerHTML = `0`
-        startMessage.classList.remove(`startStyle`)
-        play()
-
-    
+        img.style.display = 'block'
+        superman.style.top = '40vh'
+        game_state = 'Play'
+        startMessage.innerHTML = ''
+        scoreTitle.innerHTML = 'Score : '
+        scoreValue.innerHTML = '0'
+        startMessage.classList.remove('messageStyle')
+        game();
     }
 })
+
+
