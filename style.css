@@ -23,14 +23,21 @@
 }
 .kryptoBlocks {
 	position: fixed;
-	top: 40vh;
-	left: 100vw;
-	height: 70vh;
-	width: 6vw;
-	background:radial-gradient(lightgreen 50%, green);
-	border: 5px solid black;
+    top: 40vh;
+    left: 100vw;
+    height: 70vh;
+    width: 6vw;
+    background:radial-gradient(lightgreen 50%, green);
+    border: 5px solid rgba(0, 0, 0, 0);
+    background: radial-gradient(lightgreen 50%, green);
+  	border: 5px solid rgba(0, 0, 0, 0);
+  	background-image: url(./images/bottomkrypto3.png);
+  	background-size: contain; 
+  	background-repeat: no-repeat;
+  	background-position: center; 
+
 }
-.startMessage {
+.gameMessage {
 	position: absolute;
 	z-index: 10;
 	color: black;
@@ -75,7 +82,7 @@ p{
 	font-weight: bold;
 }
 @media only screen and (max-width: 1080px) {
-    .startMessage{
+    .gameMessage{
 		font-size: 30px;
 		top: 50%;
 		/* white-space: nowrap; */
