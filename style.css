@@ -2,7 +2,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'CCUpUpAndAway', sans-serif;
+
 }
 .background {
 	height: 100vh;
@@ -21,7 +22,7 @@
 	left: 30vw;
 	z-index: 100;
 }
-.kryptoBlocks {
+.kryptoBlock {
 	position: fixed;
     top: 40vh;
     left: 100vw;
@@ -30,38 +31,35 @@
     background:radial-gradient(lightgreen 50%, green);
     border: 5px solid rgba(0, 0, 0, 0);
     background: radial-gradient(lightgreen 50%, green);
-  	border: 5px solid rgba(0, 0, 0, 0);
-  	background-image: url(./images/bottomkrypto3.png);
-  	background-size: contain; 
-  	background-repeat: no-repeat;
-  	background-position: center; 
-
+  border: 5px solid rgba(0, 0, 0, 0);
+  background-image: url(./images/bottomkrypto4.png);
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: center;
 }
-.gameMessage {
-	position: absolute;
-	z-index: 10;
-	color: black;
-	top: 30%;
-	left: 50%;
-	font-size: 4em;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	font-size: 25px;
-	color: lightgreen;
+.message {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-h1{
-	color: lawngreen;
+.message img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
 }
-p{
-	color: lightgreen;
-}
-
 .messageStyle{
-	/* background: white; */
 	padding: 30px;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	border-radius: 5%;
+	color: red;
+	font-size:5em;
+	text-shadow: 
+	10px 5px 10px rgba(88, 255, 96, 0.5);
 }
 .score {
 	position: fixed;
@@ -69,32 +67,16 @@ p{
 	height: 10vh;
 	font-size: 10vh;
 	font-weight: 100;
-	color: lightgreen;
-	-webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
+	color:rgb(93, 247, 106);
+	text-shadow: 
+	10px 5px 10px rgba(255, 88, 255, 0.5);
 	top: 0;
 	left: 0;
-	margin: 10px;
+	margin: 50px;
 	font-family: Arial, Helvetica, sans-serif;
+	-webkit-text-stroke: 3px rgb(153, 50, 204); 
 }
 .score_val {
 	color: lawngreen;
-	font-weight: bold;
-}
-@media only screen and (max-width: 1080px) {
-    .gameMessage{
-		font-size: 30px;
-		top: 50%;
-		/* white-space: nowrap; */
-	}
-	.score{
-		font-size: 8vh;
-	}
-	.bird{
-		width: 120px;
-		height: 90px;
-	}
-	.kryptoBlocks{
-		width: 14vw;
-	}
+	
 }
