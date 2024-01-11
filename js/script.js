@@ -113,14 +113,14 @@ function play(){
         supermanGrav = supermanGrav + grativy
         document.addEventListener('keydown', (e) => {
             if( e.key === ' '){
-                img.src = 'images/superman2.png'
+                img.src = './images/superman2.png'
                 supermanGrav = -8
             }
         })
 
         document.addEventListener('keyup', (e) => {
             if( e.key === ' '){
-                img.src = 'images/superman1.png'
+                img.src = './images/superman1.png'
             }
         })
 
