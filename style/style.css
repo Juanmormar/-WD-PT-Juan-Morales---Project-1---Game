@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+    /* This font is not usually displayed in other people's monitors */
 	font-family: 'CCUpUpAndAway', Arial, Helvetica, sans-serif;
 
 }
