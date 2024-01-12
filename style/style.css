@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'CCUpUpAndAway', sans-serif;
+	font-family: 'CCUpUpAndAway', Arial, Helvetica, sans-serif;
 
 }
 .background {
@@ -15,8 +15,8 @@
     background-size: cover;
 }
 .superman {
-	height: 7vh;
-	width: 5vw;
+	height: 130px;
+	width: 100px;
 	position: fixed;
 	top: 40vh;
 	left: 30vw;
